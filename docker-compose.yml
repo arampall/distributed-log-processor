@@ -3,9 +3,9 @@ version: '3'
 services:
   logger:
     build:
-      context: ./src/services/logger
+      context: ./src/services/log-generator
     volumes:
-      - ./src/services/logger:/app
+      - ./src/services/log-generator:/app
       - ./logs:/logs  # Mount a volume for persistent logs
     ports:
       - "8000:8000"  # Original port
